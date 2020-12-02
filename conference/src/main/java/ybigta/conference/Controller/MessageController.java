@@ -25,18 +25,17 @@ public class MessageController {
     MessageProducer messageProducer;
 
     @PostMapping("/board")
-    public String postMessage(@RequestBody MessageForm messageForm) throws JsonProcessingException {
+    public String postMessage(MessageForm messageForm) throws JsonProcessingException {
         Message message = new Message();
         message.setContext(messageForm.getContext());
-        Member member = new Mem
-        message.setMember();
+        message.setMembername(messageForm.getName());
         message.setMessageid(1);
         log.info("Before Sending Message");
         messageProducer.sendMessage(message);
         log.info("Message Send Gooood");
 
         ///return ResponseEntity.status(HttpStatus.CREATED).body(message);
-        return "redirect:/";
+        return "redirect:/board";
     }
     @GetMapping("/board")
     public String createMessageForm(Model model){

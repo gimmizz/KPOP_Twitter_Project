@@ -13,6 +13,6 @@ public class Message {
 
     private Integer messageid;
     private String context;
-    private Member member;
+    private String membername;
 
 }
