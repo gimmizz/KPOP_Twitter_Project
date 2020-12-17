@@ -6,6 +6,8 @@
 
 ### 1. SSH를 이용해 EC2 인스턴스에 접속
 
+ELK 인스턴스를 시작한다.
+
 `ybigta-elk2.pem`가 저장되어 있는 폴더에서 `Git Bash` 실행
 
 ```bash
@@ -65,3 +67,8 @@ sudo /usr/share/logstash/bin/logstash -f logstash-ybigta-sample.conf
 
 데이터가 들어오는 것을 확인할 수 있다!
 
+
+
+### 5. 종료
+
+인스턴스 `중지` (~~종료가 아님~~)
