@@ -63,4 +63,9 @@ public class MainController {
         return "artiststat";
     }
 
+    @GetMapping("/ma")
+    public String maps(){
+        return "maps";
+    }
+
 }
