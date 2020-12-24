@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "javaType": "guru.learningjournal.kafka.examples.TwitterClean",
+  "properties": {
+    "schema": {"type": "object",
+    "$schema": true},
+    "payload": {
+      "type": "object",
+      "$ref": "newpayload.json"
+    }
+  }
+}
