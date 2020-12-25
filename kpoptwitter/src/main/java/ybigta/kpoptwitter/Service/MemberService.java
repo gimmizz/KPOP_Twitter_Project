@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 import ybigta.kpoptwitter.Domain.Information;
+import ybigta.kpoptwitter.Domain.Member;
 import ybigta.kpoptwitter.Domain.Website;
 import ybigta.kpoptwitter.Repository.MemoryRepository;
 
@@ -21,6 +22,7 @@ public class MemberService {
             if(artistid.equals(memoryRepository.getInformationlist().get(i).getName().toLowerCase())){
                 Information info = memoryRepository.getInformationlist().get(i);
                 Website web = memoryRepository.getWebsite().get(i);
+                ArrayList<Member> memberlist = memoryRepository.getMemberlistlist().get(i);
                 List<Object> infolist = new ArrayList<>();
                 List<Object> weblist = new ArrayList<>();
                 infolist.add(info.getName());
@@ -34,6 +36,7 @@ public class MemberService {
                 model.addAttribute("twitter",web.getTwitter());
                 model.addAttribute("instagram",web.getInsta());
                 model.addAttribute("fancafe",web.getFancafe());
+                model.addAttribute("memberlist", memberlist);
             }
         }
         return model;
