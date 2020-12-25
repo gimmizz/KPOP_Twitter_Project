@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "javaType": "guru.learningjournal.kafka.examples.Entities",
+  "properties": {
+    "hashtags": {"type": "array"},
+    "media": {"type": "array"},
+    "urls": {"type": "array"},
+    "user_mentions": {"type": "array"}
+  }
+}

@@ -6,12 +6,18 @@
     "id": {
       "type": "object",
       "javaType": "java.base.Long"},
-    "id_str": {"type": "string"},
     "text": {"type": "string"},
-    "source": {"type": "string"},
     "retweet_count": {"type": "integer"},
     "lang": {"type": "string"},
-    "truncated": {"type": "boolean"},
-    "artist": {"type": "string"}
+    "retweeted_status": {"type": "object","$ref": "Twitter.json"},
+    "quoted_status": {"type": "object","$ref": "Twitter.json"},
+    "quoted_count": {"type": "integer"},
+    "reply_count": {"type": "integer"},
+    "retweet_count": {"type": "integer"},
+    "favorite_count": {"type": "integer"},
+    "favorited": {"type": "boolean"},
+    "retweeted": {"type": "boolean"},
+    "entites": {"type": "object","$ref": "entities.json"},
+    "artist" : {"type": "string"}
   }
 }

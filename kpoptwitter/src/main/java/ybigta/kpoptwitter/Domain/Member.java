@@ -9,11 +9,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Getter
 @Setter
 public class Member {
-    public Member(String name, int age) {
+    public Member(String name) {
         this.name = name;
-        this.age = age;
     }
 
     private String name;
-    private int age;
 }

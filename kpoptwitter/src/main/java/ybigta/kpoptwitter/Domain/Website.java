@@ -7,16 +7,16 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Website {
-    public Website(String youtube, String twitter, String vlive, String fancafe) {
+    public Website(String youtube, String twitter, String insta, String fancafe) {
         this.youtube = youtube;
         this.twitter = twitter;
-        this.vlive = vlive;
+        this.insta = insta;
         this.fancafe = fancafe;
     }
 
     private String youtube;
     private String twitter;
-    private String vlive;
+    private String insta;
     private String fancafe;
 
 
