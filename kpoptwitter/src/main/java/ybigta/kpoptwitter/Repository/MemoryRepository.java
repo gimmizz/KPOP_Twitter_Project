@@ -31,15 +31,15 @@ public class MemoryRepository{
     private ArrayList<Member> memberlist= new ArrayList<>();
     private ArrayList<Website> website = new ArrayList<>();
     Website web1 = new Website("https://www.youtube.com/user/BANGTANTV","https://twitter.com/bts_bighit","https://www.instagram.com/BTS.bighitofficial/","http://cafe.daum.net/BANGTAN");
-    Website web2 = new Website("https://youtube.com/c/OHMYGIRL","https://twitter.com/WM_OHMYGIRL?s=20","https://instagram.com/wm_ohmygirl?igshid=1r7a9ukcvulnb");
-    Website web3 = new Website("https://www.youtube.com/channel/UC3SyT4_WLHzN7JmHQwKQZww","https://twitter.com/_IUofficial","https://www.instagram.com/dlwlrma/","http://cafe.daum.net/IU");
-    Website web4 = new Website("https://www.youtube.com/channel/UCe_oTYByLWQYCUmgmOMU_xw","https://twitter.com/official_izone","https://www.instagram.com/official_izone/","http://cafe.daum.net/official-izone");
-    Website web5 = new Website("https://www.youtube.com/channel/UCzCedBCSSltI1TFd3bKyN6g","https://twitter.com/weareoneEXO","https://www.instagram.com/weareone.exo/","http://exo.smtown.com/");
-    Website web6 = new Website("https://www.youtube.com/channel/UCzgxx_DM2Dcb9Y1spb9mUJA/featured","https://twitter.com/JYPETWICE/","https://www.instagram.com/twicetagram/","https://fans.jype.com/");
-    Website web7 = new Website("https://youtube.com/c/BLACKPINKOFFICIAL","https://twitter.com/BLACKPINK?s=20","https://instagram.com/blackpinkofficial?igshid=1jz8bhf4o1l4l",);
-    Website web8 = new Website("https://youtube.com/c/nctsmtown","https://twitter.com/NCTsmtown?s=20","https://instagram.com/nct?igshid=1245845smutzw");
-    Website web9 = new Website("https://youtube.com/user/officialbtob","https://twitter.com/OFFICIALBTOB?s=20","https://instagram.com/cube_official_btob?igshid=184b2464cckru");
-    Website web10 = new Website("https://youtube.com/c/redvelvet","https://twitter.com/RVsmtown?s=20","https://instagram.com/redvelvet.smtown?igshid=15dg0sqd3oziq");
+//    Website web2 = new Website("https://youtube.com/c/OHMYGIRL","https://twitter.com/WM_OHMYGIRL?s=20","https://instagram.com/wm_ohmygirl?igshid=1r7a9ukcvulnb");
+//    Website web3 = new Website("https://www.youtube.com/channel/UC3SyT4_WLHzN7JmHQwKQZww","https://twitter.com/_IUofficial","https://www.instagram.com/dlwlrma/","http://cafe.daum.net/IU");
+//    Website web4 = new Website("https://www.youtube.com/channel/UCe_oTYByLWQYCUmgmOMU_xw","https://twitter.com/official_izone","https://www.instagram.com/official_izone/","http://cafe.daum.net/official-izone");
+//    Website web5 = new Website("https://www.youtube.com/channel/UCzCedBCSSltI1TFd3bKyN6g","https://twitter.com/weareoneEXO","https://www.instagram.com/weareone.exo/","http://exo.smtown.com/");
+//    Website web6 = new Website("https://www.youtube.com/channel/UCzgxx_DM2Dcb9Y1spb9mUJA/featured","https://twitter.com/JYPETWICE/","https://www.instagram.com/twicetagram/","https://fans.jype.com/");
+//    Website web7 = new Website("https://youtube.com/c/BLACKPINKOFFICIAL","https://twitter.com/BLACKPINK?s=20","https://instagram.com/blackpinkofficial?igshid=1jz8bhf4o1l4l");
+//    Website web8 = new Website("https://youtube.com/c/nctsmtown","https://twitter.com/NCTsmtown?s=20","https://instagram.com/nct?igshid=1245845smutzw");
+//    Website web9 = new Website("https://youtube.com/user/officialbtob","https://twitter.com/OFFICIALBTOB?s=20","https://instagram.com/cube_official_btob?igshid=184b2464cckru");
+//    Website web10 = new Website("https://youtube.com/c/redvelvet","https://twitter.com/RVsmtown?s=20","https://instagram.com/redvelvet.smtown?igshid=15dg0sqd3oziq");
 
 
 
