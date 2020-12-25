@@ -23,6 +23,7 @@ public class MemberService {
                 Information info = memoryRepository.getInformationlist().get(i);
                 Website web = memoryRepository.getWebsite().get(i);
                 ArrayList<Member> memberlist = memoryRepository.getMemberlistlist().get(i);
+                String iframe = memoryRepository.getIframe().get(i);
                 List<Object> infolist = new ArrayList<>();
                 List<Object> weblist = new ArrayList<>();
                 infolist.add(info.getName());
@@ -37,11 +38,24 @@ public class MemberService {
                 model.addAttribute("instagram",web.getInsta());
                 model.addAttribute("fancafe",web.getFancafe());
                 model.addAttribute("memberlist", memberlist);
+                model.addAttribute("iframe",iframe);
             }
         }
         return model;
 
     }
+    public Model insertiframe(String artistid, Model model){
+        for(int i=0; i < 10; i++){
+            if(artistid.equals(memoryRepository.getInformationlist().get(i).getName().toLowerCase())){
+                String iframe = memoryRepository.getIframe().get(i);
+                List<Object> infolist = new ArrayList<>();
+                List<Object> weblist = new ArrayList<>();
+                model.addAttribute("iframe",iframe);
+            }
+        }
+        return model;
+    }
     
 
 }
+
