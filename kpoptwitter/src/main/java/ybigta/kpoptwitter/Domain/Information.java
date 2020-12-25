@@ -10,7 +10,7 @@ import java.util.Date;
 @Getter
 @Setter
 public class Information {
-    public Information(String name, Date debut, String enter, String fandom) {
+    public Information(String name, String debut, String enter, String fandom) {
         this.name = name;
         this.debut = debut;
         Enter = enter;
@@ -18,7 +18,7 @@ public class Information {
     }
 
     private String name;
-    private Date debut;
+    private String debut;
     private String Enter;
     private String fandom;
 }

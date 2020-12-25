@@ -1,18 +1,23 @@
 package ybigta.kpoptwitter.Controller;
 
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import ybigta.kpoptwitter.Service.MemberService;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 @Controller
+@RequiredArgsConstructor
 public class MainController {
+
+    private final MemberService memberService;
 
     @GetMapping("/")
     public String welcome(){
@@ -32,22 +37,8 @@ public class MainController {
     @RequestMapping("/artist/{artistid}")
     public String ArtistMain(Model model, @PathVariable String artistid) throws IOException {
 
-        List<String> InformationList = new ArrayList<>();
-        List<String> WebsiteList = new ArrayList<>();
-        List<String> MemberList = new ArrayList<>();
-
-        MemberList.add("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-
-        InformationList.add("BTS DEBUT : 1212");
-        InformationList.add("BTS HIHI");
-        InformationList.add("BDFDF");
-        InformationList.add("DFDFDFDFDFDF");
-        InformationList.add("DFDFDFDAADF");
-        model.addAttribute("InformationList",InformationList);
-        model.addAttribute("WebsiteList",WebsiteList);
-        model.addAttribute("MemberList",MemberList);
+        model = memberService.insertname(artistid,model);
         model.addAttribute("artistid", artistid);
-
         return "artistmain";
     }
 
