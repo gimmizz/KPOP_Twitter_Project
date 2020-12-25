@@ -19,6 +19,11 @@ public class MainController {
 
     private final MemberService memberService;
 
+    @GetMapping("/")
+    public String home(){
+        return "redirect:/artist";
+    }
+
     @GetMapping("/artist")
     public String Artist(){
         return "artist";
