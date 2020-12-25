@@ -17,6 +17,7 @@
       "favorite_count": {"type": "integer"},
       "favorited": {"type": "boolean"},
       "retweeted": {"type": "boolean"},
+      "retweet": {"type": "boolean"},
       "entites": {"type": "object","$ref": "entities.json"}
 
   }

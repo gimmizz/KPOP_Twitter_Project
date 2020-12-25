@@ -25,6 +25,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "favorite_count",
     "favorited",
     "retweeted",
+    "retweet",
     "entites"
 })
 public class TwitterPayload {
@@ -53,6 +54,8 @@ public class TwitterPayload {
     private Boolean favorited;
     @JsonProperty("retweeted")
     private Boolean retweeted;
+    @JsonProperty("retweet")
+    private Boolean retweet;
     @JsonProperty("entites")
     private Entities entites;
     @JsonIgnore
@@ -178,6 +181,16 @@ public class TwitterPayload {
         this.retweeted = retweeted;
     }
 
+    @JsonProperty("retweet")
+    public Boolean getRetweet() {
+        return retweet;
+    }
+
+    @JsonProperty("retweet")
+    public void setRetweet(Boolean retweet) {
+        this.retweet = retweet;
+    }
+
     @JsonProperty("entites")
     public Entities getEntites() {
         return entites;
@@ -250,6 +263,10 @@ public class TwitterPayload {
         sb.append('=');
         sb.append(((this.retweeted == null)?"<null>":this.retweeted));
         sb.append(',');
+        sb.append("retweet");
+        sb.append('=');
+        sb.append(((this.retweet == null)?"<null>":this.retweet));
+        sb.append(',');
         sb.append("entites");
         sb.append('=');
         sb.append(((this.entites == null)?"<null>":this.entites));
@@ -269,6 +286,7 @@ public class TwitterPayload {
     @Override
     public int hashCode() {
         int result = 1;
+        result = ((result* 31)+((this.retweet == null)? 0 :this.retweet.hashCode()));
         result = ((result* 31)+((this.retweeted == null)? 0 :this.retweeted.hashCode()));
         result = ((result* 31)+((this.createdAt == null)? 0 :this.createdAt.hashCode()));
         result = ((result* 31)+((this.quotedCount == null)? 0 :this.quotedCount.hashCode()));
@@ -295,7 +313,7 @@ public class TwitterPayload {
             return false;
         }
         TwitterPayload rhs = ((TwitterPayload) other);
-        return (((((((((((((((this.retweeted == rhs.retweeted)||((this.retweeted!= null)&&this.retweeted.equals(rhs.retweeted)))&&((this.createdAt == rhs.createdAt)||((this.createdAt!= null)&&this.createdAt.equals(rhs.createdAt))))&&((this.quotedCount == rhs.quotedCount)||((this.quotedCount!= null)&&this.quotedCount.equals(rhs.quotedCount))))&&((this.replyCount == rhs.replyCount)||((this.replyCount!= null)&&this.replyCount.equals(rhs.replyCount))))&&((this.retweetedStatus == rhs.retweetedStatus)||((this.retweetedStatus!= null)&&this.retweetedStatus.equals(rhs.retweetedStatus))))&&((this.quotedStatus == rhs.quotedStatus)||((this.quotedStatus!= null)&&this.quotedStatus.equals(rhs.quotedStatus))))&&((this.entites == rhs.entites)||((this.entites!= null)&&this.entites.equals(rhs.entites))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.text == rhs.text)||((this.text!= null)&&this.text.equals(rhs.text))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.lang == rhs.lang)||((this.lang!= null)&&this.lang.equals(rhs.lang))))&&((this.retweetCount == rhs.retweetCount)||((this.retweetCount!= null)&&this.retweetCount.equals(rhs.retweetCount))))&&((this.favoriteCount == rhs.favoriteCount)||((this.favoriteCount!= null)&&this.favoriteCount.equals(rhs.favoriteCount))))&&((this.favorited == rhs.favorited)||((this.favorited!= null)&&this.favorited.equals(rhs.favorited))));
+        return ((((((((((((((((this.retweet == rhs.retweet)||((this.retweet!= null)&&this.retweet.equals(rhs.retweet)))&&((this.retweeted == rhs.retweeted)||((this.retweeted!= null)&&this.retweeted.equals(rhs.retweeted))))&&((this.createdAt == rhs.createdAt)||((this.createdAt!= null)&&this.createdAt.equals(rhs.createdAt))))&&((this.quotedCount == rhs.quotedCount)||((this.quotedCount!= null)&&this.quotedCount.equals(rhs.quotedCount))))&&((this.replyCount == rhs.replyCount)||((this.replyCount!= null)&&this.replyCount.equals(rhs.replyCount))))&&((this.retweetedStatus == rhs.retweetedStatus)||((this.retweetedStatus!= null)&&this.retweetedStatus.equals(rhs.retweetedStatus))))&&((this.quotedStatus == rhs.quotedStatus)||((this.quotedStatus!= null)&&this.quotedStatus.equals(rhs.quotedStatus))))&&((this.entites == rhs.entites)||((this.entites!= null)&&this.entites.equals(rhs.entites))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.text == rhs.text)||((this.text!= null)&&this.text.equals(rhs.text))))&&((this.additionalProperties == rhs.additionalProperties)||((this.additionalProperties!= null)&&this.additionalProperties.equals(rhs.additionalProperties))))&&((this.lang == rhs.lang)||((this.lang!= null)&&this.lang.equals(rhs.lang))))&&((this.retweetCount == rhs.retweetCount)||((this.retweetCount!= null)&&this.retweetCount.equals(rhs.retweetCount))))&&((this.favoriteCount == rhs.favoriteCount)||((this.favoriteCount!= null)&&this.favoriteCount.equals(rhs.favoriteCount))))&&((this.favorited == rhs.favorited)||((this.favorited!= null)&&this.favorited.equals(rhs.favorited))));
     }
 
 }

@@ -221,10 +221,41 @@ The above copyright notice and this permission notice shall be included in all c
                                     <div class="tab-pane" id="messages">
                                         <table class="table">
                                             <tbody>
-                                            <tr th:each="website : ${WebsiteList}">
-                                                <td th:text = "${website}"</td>
-                                            </tr>
+                                        <tr>
+                                            <li>
+                                                <a class="img-holder switch-trigger" th:href="${youtube}">
+                                                    <img src="../img/youtube.jpg">         Official youtube
+                                                </a>
+                                            </li>
+
+                                        </tr>
+                                        <tr>
+                                            <li>
+                                                <a class="img-holder switch-trigger" th:href="${instagram}">
+                                                    <img src="../img/instagram.jpg">         Official instagram
+                                                </a>
+                                            </li>
+
+                                        </tr>
+                                        <tr>
+                                            <li>
+                                                <a class="img-holder switch-trigger" th:href="${twitter}">
+                                                    <img src="../img/twitter.jpg">         Official twitter
+                                                </a>
+                                            </li>
+
+                                        </tr>
+                                        <tr>
+                                            <li>
+                                                <a class="img-holder switch-trigger" th:href="${fancafe}">
+                                                    <img src="../img/fancafe.jpg">         Official fancafe
+                                                </a>
+                                            </li>
+
+                                        </tr>
+
                                             </tbody>
+
                                         </table>
                                     </div>
                                     <div class="tab-pane" id="settings">
