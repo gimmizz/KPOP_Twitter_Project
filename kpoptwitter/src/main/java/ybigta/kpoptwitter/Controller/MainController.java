@@ -59,4 +59,9 @@ public class MainController {
         return "maps";
     }
 
+    @GetMapping("/vs")
+    public String vs(){
+        return "vs";
+    }
+
 }
