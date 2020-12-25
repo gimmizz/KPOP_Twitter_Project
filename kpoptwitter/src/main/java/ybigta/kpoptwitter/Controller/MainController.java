@@ -18,7 +18,7 @@ import java.util.List;
 public class MainController {
 
     private final MemberService memberService;
-    
+
     @GetMapping("/artist")
     public String Artist(){
         return "artist";
