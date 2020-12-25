@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "javaType": "guru.learningjournal.kafka.examples.TwitterPayload",
+  "properties": {
+      "created_at": {"type": "string"},
+      "id": {
+        "type": "object",
+        "javaType": "java.base.Long"},
+      "text": {"type": "string"},
+      "retweet_count": {"type": "integer"},
+      "lang": {"type": "string"},
+      "retweeted_status": {"type": "object","$ref": "Twitter.json"},
+      "quoted_status": {"type": "object","$ref": "Twitter.json"},
+      "quoted_count": {"type": "integer"},
+      "reply_count": {"type": "integer"},
+      "retweet_count": {"type": "integer"},
+      "favorite_count": {"type": "integer"},
+      "favorited": {"type": "boolean"},
+      "retweeted": {"type": "boolean"},
+      "entites": {"type": "object","$ref": "entities.json"}
+
+  }
+}
