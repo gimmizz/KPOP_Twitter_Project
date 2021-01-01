@@ -51,7 +51,7 @@ Twitter에서는 다른 사람보다 더 많이 언급되는 단어, 또는 주�
 
 20-2 YBIGTA Conference에서 발표했던 영상은 [Youtube](https://www.youtube.com/watch?v=7eK-HoVYKrA)에 업로드되어 있습니다. 
 
-<br><br>
+<br>
 
 ## 구글 드라이브 링크 (프로젝트 시연,  발표자료)
 
