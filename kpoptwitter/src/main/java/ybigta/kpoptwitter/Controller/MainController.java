@@ -20,13 +20,8 @@ public class MainController {
     private final MemberService memberService;
 
     @GetMapping("/")
-    public String welcome(){
-        return "index";
-    }
-
-    @GetMapping("/home")
-    public String dashboard(){
-        return "dashboard";
+    public String home(){
+        return "redirect:/artist";
     }
 
     @GetMapping("/artist")
@@ -49,7 +44,7 @@ public class MainController {
 
     @RequestMapping("/stat/{artistid}")
     public String ArtistStat(Model model, @PathVariable String artistid) throws IOException {
-
+        memberService.insertiframe(artistid,model);
         model.addAttribute("artistid", artistid);
         return "artiststat";
     }
