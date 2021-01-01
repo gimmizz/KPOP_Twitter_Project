@@ -1,6 +1,0 @@
-- pipeline.id: pipeline2_v6_update
-  path.config: "/etc/logstash/conf.d/logstash-ybigta-v6.conf"
-- pipeline.id: pipeline3_kpop_keyword
-  path.config: "/etc/logstash/conf.d/logstash-ybigta-kpop.conf"
-- pipeline.id: pipeline4_one
-  path.config: "/etc/logstash/conf.d/logstash-ybigta-one.conf"
