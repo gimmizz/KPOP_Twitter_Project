@@ -1,0 +1,6 @@
+- pipeline.id: pipeline1
+  path.config: "/etc/logstash/conf.d/bts_last.conf"
+- pipeline.id: pipeline2
+  path.config: "/etc/logstash/conf.d/blackpink_last.conf"
+
+
