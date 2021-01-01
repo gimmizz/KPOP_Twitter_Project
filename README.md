@@ -5,14 +5,14 @@ Twitter에서 받아온 KPOP 관련 **실시간 / 대용량 데이터** 를 수�
 
 팀원 : 김희진(17기), 김용우(15기), 노연수(17기), 송민석(16기), 신예진(17기), 이형구(17기)
 
-
+<br>
 
 1. **트위터 등 소셜미디어에서 데이터 수집** : 선정한 10 KPOP aritists에 대한 Twitter 데이터를 수집합니다.
 2. **데이터 파이프라인 시스템 설계/개발** : ELK Stack, Kafka 
 3. **대용량/실시간 스트리밍 데이터 처리** : 6 millon per day, (Near) Real-time Streaming
 4. **얻은 데이터를 활용한 다양한 분석 진행** : Visulizations, Ranking, Count, Twitter Trends
 
-
+<br><br>
 
 ## 데이터 파이프라인 설계도
 
@@ -32,6 +32,8 @@ Twitter에서는 다른 사람보다 더 많이 언급되는 단어, 또는 주�
 
 
 
+<br><br>
+
 ## Repository
 
 - ELK - src : ELK stack에서의 configurations
@@ -43,13 +45,13 @@ Twitter에서는 다른 사람보다 더 많이 언급되는 단어, 또는 주�
 - trends_crontab : 실시간 Twitter Trends 데이터 수집 및 자동배치화
 - wiki : 기술 사용법에 대해 정리
 
-
+<br><br>
 
 ## 발표 영상
 
 20-2 YBIGTA Conference에서 발표했던 영상은 [Youtube](https://www.youtube.com/watch?v=7eK-HoVYKrA)에 업로드되어 있습니다. 
 
-
+<br><br>
 
 ## 구글 드라이브 링크 (프로젝트 시연,  발표자료)
 
