@@ -3,12 +3,12 @@
 ### 리눅스 내장 프로그램인 Crontab을 이용하여 일정 시간마다 ```trends.py```를 실행해보자! 
 
 먼저, 현재 등록된 Crontab task목록을 확인해줍니다. 아무것도 안 뜰 겁니다.
-```console
+```bash
 crontab -l
 ```
 
 새로운 Task를 등록해줍시다.
-```console
+```bash
 crontab -e
 ```
 
